@@ -1,0 +1,613 @@
+/*------font import–––––– */
+
+@font-face{
+    src: url(fonts/Tharon.woff);
+    font-family: tharon;
+}
+
+
+
+
+/* RESET RULES webpage */
+
+
+:root {
+  --white: #fff;
+  --black: #221f1f;
+  --lightpurple: #9e91f2;
+  --darkgray: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* side bar */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar {
+  
+  position: static;/* changing to absolute makes it vanish */
+  z-index: 0;
+  top:10px;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+  
+ 
+}
+
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family:'Poppins', sans-serif;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #5bcbf0;
+}
+
+.sidebar .closebtn {
+  position: inherit;
+  right: 15px;
+  font-size: 25px;
+  margin-left: 130px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: #5bcbf0;
+  top: 15%;
+  padding: 3px 10px;
+  border: none;
+  left:10px;
+  position:absolute;
+    
+
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+.searchbtn {
+  cursor: pointer;
+  top: 30%;
+  right:20px;
+  position:absolute;
+  background-color: #5bcbf0;  
+
+}
+
+.searchbtn:hover {
+  background-color: darkgray;
+}
+
+.togglesearch{
+  background: #E8E8E4;
+  position: absolute;
+  top: 74px;
+  right: 28.7%;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #5bcbf0;
+  display: none;
+}
+ 
+.togglesearch:before{
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #D80B15;
+}
+ 
+.togglesearch input[type="text"]{
+  width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  border: 1px solid #D80B15;
+  outline: none;
+}
+ 
+.togglesearch input[type="button"]{
+  width: 80px;
+  padding: 5px 0;
+  background: #D80B15;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #D80B15;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width:240px) and (max-width: 768px){
+    .navbar ul li{
+        float:none;
+        display:block;
+        text-align:center;
+        margin:0 auto;
+    }
+}
+
+
+/*----------jumbotron----------*/
+
+.jumbotron{
+    top:50%;
+    background-color: red;
+    max-width:1600px;
+    min-width: 500px;
+    height:100%;
+    position: relative;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 100%;
+    
+    
+}
+.row{
+  content: "";
+  display: table;
+  clear: both;
+    
+}
+
+
+
+
+/*.social-icon {display: inline-block; margin: 0 10px*/
+
+
+ 
+.Socialmedia-offset{
+    display: inline-block; 
+}
+
+
+.social-icon{
+    height: 3%;
+    width: 3%;
+}
+
+.col-md-8:hover {
+  transform: scale(1.2);  
+}
+
+/*-------------name box----------*/
+
+.Namebox{
+    top:27%;
+    left:10%;
+    color:darkgrey;
+    max-height: 400px;
+    max-width: 600px;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.Connectbutton {
+  top:52%;
+  left:10%;
+  position: absolute;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: darkgray;
+  background-color: black;
+  border-color:darkgray;
+  border-radius: 20px;
+  font-family: 'poppins',sans-serif;
+  font-weight:bold;
+
+}
+
+.Connectbutton:hover {background-color:darkgray;
+color:black;}
+
+.Connectbutton:active {
+  background-color: darkgray;
+}
+
+.aboutcontainer{
+    background-color: white;
+    top: 70%;
+    position:absolute;
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------ABOUT---------*/
+
+.wrapper{
+        width: 400px;
+        float: left;
+        font-family: 'poppins', sans-serif;
+        margin:0 auto;
+    }
+    .skill {
+        margin-bottom: 25px;
+        position: relative;
+      overflow-x:hidden;
+      
+    }
+    .skill > p {
+        font-size: 15px;
+        font-weight: 700;
+        color: #1a1716;
+        margin: 0;
+    }
+    .skill:before{
+        width: 100%;
+        height: 5px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: #959595;
+        bottom: 0;
+    }
+    .skill-bar {
+        width: 100%;
+        height: 5px;
+        background:#5bcbf0;
+        display: block;
+        position: relative;
+    }
+
+    /* SKILL 1 */
+    .skill1{
+        width: 95%;
+      
+    }
+    .skill-bar span{
+        position: absolute;
+        border-top: 0px solid #5bcbf0;
+        top: -30px;
+        padding: 0;
+        font-size: 15px;
+        padding: 3px 0;
+        font-weight: 500;
+    }
+    .skill-bar {
+        position: relative;
+      
+    }
+
+    .skill1 .skill-count1 {
+        right: 0;
+    }
+    /* SKILL 2 */
+    .skill2{
+        width: 85%;
+    }
+
+    .skill2 .skill-count2 {
+        right: 0;
+    }
+    /* SKILL 3 */
+    .skill3{
+        width: 75%;
+    }
+    .skill3 .skill-count3 {
+        right: 0;
+    }
+
+    /* SKILL 4 */
+    .skill4{
+        width: 65%
+    }
+
+    .skill4 .skill-count4 {
+        right: 0;
+    }
+
+    
+/* GITHUB SOURCE STYLE  */
+.github-source{
+  float:right;
+  display:block;
+  color:#fff;
+  margin:0 20px;
+  position: relative;
+  z-index:999999;
+  top:0;
+}
+.github-source i{
+  font-size:50px;
+  color:#000
+}
+
+
+
+
+
+
+/*-------------main page----------*/
+
+body{
+
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  font: 16px/1.5 sans-serif;
+}
+
+
+
+
+h3{
+  color: gray;
+  font-size: 15px;
+  font-weight: bold;
+  font-family:'Poppins', sans-serif;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+h3 span{
+  transition: .5s linear
+
+}
+h3:hover span:nth-child(5){
+  margin-left: 30px
+}
+h3:hover span:nth-child(1){
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+
+h3:hover span:nth-child(2){
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+h3:hover span:nth-child(3){
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+
+
+
+.flipH {
+        transform: scale(-1, 1);
+        color: gray;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+      }
+
+
+
+/* MAIN RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.trigger-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  background: black;
+  transition: transform 0.4s;
+}
+
+.page-header .trigger-menu {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--white);
+  letter-spacing: 0.2em;
+}
+
+.page-header .trigger-menu svg {
+  fill: var(--white);
+  margin-right: 8px;
+  transition: transform 0.3s;
+}
+
+.page-header .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  text-align: center;
+  padding: 15vh 0 5vh;
+  overflow: auto;
+  z-index: 1;
+  background: var(--lightpurple);
+}
+
+.page-header .menu a {
+  font-size: 3rem;
+}
+
+.page-header .sub-menu a {
+  font-size: 1.5rem;
+}
+
+.lottie-wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.page-main section {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.page-main section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+
+/* BODY CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu-open {
+  overflow: hidden;
+}
+
+.menu-open .trigger-menu-wrapper {
+  background: transparent;
+}
+
+.menu-open .page-header .menu {
+  display: block;
+}
+
+.menu-open .page-header svg {
+  transform: rotate(45deg);
+}
+
+.menu-open-with-lottie .page-header .menu {
+  padding: 5vh 0;
+}
+
+.scroll-down .trigger-menu-wrapper {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-down .lottie-wrapper {
+  background: var(--darkgray);
+}
+
+.scroll-up .trigger-menu-wrapper {
+  transform: none;
+}
+
+.scroll-up:not(.menu-open) .trigger-menu-wrapper {
+  background: var(--lightpurple);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 25px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  background: var(--darkgray);
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}

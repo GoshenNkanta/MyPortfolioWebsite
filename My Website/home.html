@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GOSHENNKANTA</title><meta charset="utf-8"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="home.css" media="screen">
+
+    </head>
+    <body>
+        
+        
+     <!-- Navbar -->
+<header class="page-header">
+      <nav>            
+            <div class="trigger-menu-wrapper">
+                    <button class="openbtn" style="color: #5bcbf0" onclick="openNav()">☰</button>
+                
+                
+    <script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+              
+            <!---search button --------->
+                
+                
+<li class="searchbar"><img class="searchbtn"  src = "images/Search_Button.png" width = "20" height ="20">
+<i class="fa fa-search" aria-hidden="true"></i>
+         <div class="togglesearch">
+            <input type="text" placeholder=""/>
+            <input type="button" value="Search"/>
+         </div>
+</li>
+                   
+                
+<script>
+        $(document).ready(function() {
+
+            $(".fa-search").click(function() {
+               $(".togglesearch").toggle();
+               $("input[type='text']").focus();
+             });
+
+        });
+</script>       
+                
+                   <a href="load.html" class="trigger-menu">
+                      <h3><span>GO</span>SHE</h3><img  id="O" src="images/goshenlogo%20(1).png"  width="40" height="50"><h3>K<span>A</span>N<span>T</span>A</h3>
+                  </a>
+            </div>
+        <div id="mySidebar" class="sidebar">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="#">SERVICES</a>
+                  <a href="#">ABOUT ME</a>
+                  <a href="#">SKILLS</a>
+                  <a href="#">PORTFOLIO</a>
+                  <a href="#">CLIENTS</a>
+                  <a href="#">CONTACT</a>
+        </div>
+     </nav>
+ </header>
+
+
+
+
+  <!-- header -->
+<header class="jumbotron"> 
+
+        <img src="images/mary.png" style="max-height:800px; max-width: 600px; float: right; padding-top: 5%; ">
+    
+    <div class="column" style="background-color: blue;">
+
+    <div class="row" style="max-width: 280px; ; position: absolute; left: 10%; top: 43%;" >
+    
+        
+    <div class="col-md-8 Socialmedia-offset"><a href="https://youtube.com/channel/mychannel" target="_blank" class="social-icon"><img src ="images/youtube.PNG" style="max-height: 30px;
+    max-width: 30px;"></a>
+    </div> 
+        
+    <div class="col-md-8 Socialmedia-offset"><a href="http://linkedin.com/in/Goshen-nkanta-290983138" target="_blank" class="social-icon"><img src="images/linkedinlogo.png" style="padding-bottom: 2.8px;max-height: 30px; max-width: 30px;"></a>
+    </div>    
+    
+        
+    <div class="col-md-8 Socialmedia-offset"><a href="http://twitter.com/GoshenNkanta" target="_blank" class="social-icon"><img src="images/twitterlogo.png" style="max-height: 30px;
+    max-width: 30px;"></a>
+    </div>
+        
+    <div class="col-md-8 Socialmedia-offset"><a href="http://whatsApp.com/myname" target="_blank" class="social-icon"><img src="images/whatsapplogo.PNG" style="max-height: 30px;
+    max-width: 30px;"></a>
+    </div>
+        
+    <div class="col-md-8 Socialmedia-offset"><a href="http://pintrest.com/bhobbg" target="_blank" class="social-icon"><img src="images/pintrestlogo.png" style="max-height: 30px;
+    max-width: 30px;"></a>
+    </div>
+        
+    <div class="col-md-8 Socialmedia-offset"><a href="http://instagram.com/st_gosh" target="_blank" class="social-icon"><img src="images/instagramlogo.png" style="max-height: 30px;
+    max-width: 30px;"></a>
+    </div>
+        
+    <div class="col-md-8 Socialmedia-offset"><a href="http://snapchat.com/goshy" target="_blank" class="social-icon"><img src="images/snapchatlogo.PNG" style="max-height: 30px;
+    max-width: 30px;"></a>
+    </div> 
+        
+    <div class="col-md-8 Socialmedia-offset"><a href="http://facebook.com/myprofilename" target="_blank" class="social-icon"><img src="images/facebooklogo.png" style="max-height: 30px;
+    max-width: 30px;"></a>
+        </div> 
+    </div>
+  </div> 
+    
+        <!-- name -->
+    <div class ="Namebox">
+    <h2 style="font-family: 'Homemade Apple', cursive; color:lightblue">Hello! I'm goshen</h2>
+    <h1><span style="font-size: 3.5rem;"
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "Web Developer ", "UI/UX Designer ", "Graphics Designer ", "Programmer "]'></span></h1>
+    </div>
+    
+    
+    <script>
+        
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 60 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.03em solid darkgrey}";
+  document.body.appendChild(css);
+};
+    </script>
+    
+    
+  <button href = "#contactpage" class="Connectbutton" style="font-family: 'poppin',sans-serif;">CONTACT ME</button>  
+  
+ </header>
+   
+
+    
+        <!-- about me 
+
+
+
+ <div class="row" style="padding:32px;position: absolute; top: 67%; display: block">
+<div class=" section container-fluid" style="max-width:1460px; padding:64px;background-color:white;  " id="band">
+    <h2 class="wide" style="font-family:'poppins',sans-serif; font-weight: bolder">MY LITTLE STORY</h2>
+
+    
+      <div class="col-md-2">
+    
+        <img src="images/about.webp"  style="width:20%; ">
+      </div>
+      <div class="col-md-2">
+          <p style="font-family:'poppins', sans-serif;">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+         
+              
+          <!--skill bar
+          
+          
+     <div class="col-md-4">
+    
+<div class="wrapper">
+        <br><br>
+        <div class="skill">
+            <p style="font-family:'poppins',sans-serif;">Photography</p>
+            <div class="skill-bar skill1 wow slideInLeft animated">
+                <span class="skill-count1">95%</span>
+            </div>
+        </div>
+        <div class="skill" >
+            <p style="font-family:'poppins',sans-serif;">Designing</p>
+            <div class="skill-bar skill2 wow slideInLeft animated">
+                 <span class="skill-count2">85%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p style="font-family:'poppins',sans-serif;">Development</p>
+            <div class="skill-bar skill3 wow slideInLeft animated">
+                <span class="skill-count3">75%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p style="font-family:'poppins',sans-serif;">Editing</p>
+            <div class="skill-bar skill4 wow slideInLeft animated">
+                <span class="skill-count4">65%</span>
+            </div>
+        </div>
+    </div>
+              
+   <script>
+       (function($){
+        new WOW().init();
+    })(jQuery);
+              
+    </script>           
+              
+              
+          </div>
+    
+      </div>
+     
+    </div>
+  </div>
+-->
+
+
+
+<!--div class="wrapper2">
+    <div class = "container-fluid " style="position: absolute;float: left; top :170%; background-color: black; color: white;">vadfhkvaackvachvadchvxckaschaaCKschvuhvkjac </div>
+        </div>
+        
+        
+        
+
+        
+        <!-- footer -->
+        
+        
+
+   
+
+<footer class="page-footer">
+  
+
+</footer>
+    
+        
+        
+    </body>
+
+
+</html>
